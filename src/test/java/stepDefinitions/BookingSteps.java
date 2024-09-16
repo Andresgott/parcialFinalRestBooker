@@ -62,11 +62,6 @@ public class BookingSteps
         response = RequestBooking.post("/booking",payload);
     }
 
-    @And(": The message is {string}")
-    public void verifyResponseMessage(String message){
-        response.prettyPrint();
-        response.then().assertThat().body("message", Matchers.equalTo(message));
-    }
 
     @And(": I perform PUT request with data")
     public void Put(DataTable bookingInfo) throws JsonProcessingException {

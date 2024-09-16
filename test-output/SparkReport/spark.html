@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary"></span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Sep 16, 2024 09:12:23 AM</span></a>
+<a href="#"><span class="badge badge-primary">Sep 16, 2024 11:01:42 AM</span></a>
 </li>
 </ul>
 </div>
@@ -97,7 +97,7 @@
           <div class="test-detail">
             <p class="name">Tests of the whole RestfulBooker database</p>
             <p class="text-sm">
-              <span>9:12:24 AM</span> / <span>00:00:06:036</span>
+              <span>11:01:42 AM</span> / <span>00:00:20:810</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -106,9 +106,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-fail">Tests of the whole RestfulBooker database</h5>
-<span class='badge badge-success'>09.16.2024 9:12:24 AM</span>
-<span class='badge badge-danger'>09.16.2024 9:12:30 AM</span>
-<span class='badge badge-default'>00:00:06:036</span>
+<span class='badge badge-success'>09.16.2024 11:01:42 AM</span>
+<span class='badge badge-danger'>09.16.2024 11:02:03 AM</span>
+<span class='badge badge-default'>00:00:20:810</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -121,14 +121,7 @@
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Checking that the endpoints do their job</div>
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="3"><span class="badge log pass-bg mr-2">Pass</span>checking if the get booking gets me all the list of bookings</div>
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>checking if the get booking gets me all the list of bookings</div>
       </div>
     </div>
         <div class="collapse">
@@ -154,53 +147,24 @@
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="7"><span class="badge log fail-bg mr-2">Fail</span>checking if the get booking by id gets me the booking i'm looking for if the id exists</div>
+        <div class="node" id="6"><span class="badge log pass-bg mr-2">Pass</span>checking if the get booking by id gets me the booking i'm looking for if the id exists</div>
       </div>
     </div>
-        <div class="">
+        <div class="collapse">
           <div class="card-body">
               <div class="step pass-bg" title="stepDefinitions.BookingSteps.getById(java.lang.String)">
                 <span>Given : I perform a GET by id call to the booking endpoint with "4006"</span>
       <div>
       </div>
               </div>
-              <div class="step fail-bg" title="stepDefinitions.BookingSteps.iVerifyThatBodyNotHaveSize(java.lang.Integer)">
+              <div class="step pass-bg" title="stepDefinitions.BookingSteps.iVerifyThatBodyNotHaveSize(java.lang.Integer)">
                 <span>And : I verify that the body does not have size 0</span>
       <div>
-        <textarea disabled class="code-block">groovy.json.JsonException: Lexing failed on line: 1, column: 1, while reading 'N', no possible valid JSON value or punctuation could be recognized.
-	at groovy.json.JsonLexer.nextToken(JsonLexer.java:86)
-	at groovy.json.JsonLexer$nextToken.call(Unknown Source)
-	at io.restassured.internal.path.json.ConfigurableJsonSlurper.parse(ConfigurableJsonSlurper.groovy:97)
-	at io.restassured.internal.path.json.ConfigurableJsonSlurper$parse$0.callCurrent(Unknown Source)
-	at io.restassured.internal.path.json.ConfigurableJsonSlurper.parseText(ConfigurableJsonSlurper.groovy:83)
-	at io.restassured.internal.path.json.ConfigurableJsonSlurper$parseText.call(Unknown Source)
-	at io.restassured.internal.ContentParser.parse(ContentParser.groovy:42)
-	at io.restassured.internal.ContentParser$parse.call(Unknown Source)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:497)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
-	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
-	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
-	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:270)
-	at io.restassured.specification.ResponseSpecification$body$0.callCurrent(Unknown Source)
-	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:117)
-	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)
-	at stepDefinitions.BookingSteps.iVerifyThatBodyNotHaveSize(BookingSteps.java:34)
-	at ✽.: I verify that the body does not have size 0(file:///C:/Users/andre/Certi2/RestAssured%20(2)%20(1)/RestAssured/src/test/resources/Booking.feature:11)
-</textarea>
-      
       </div>
               </div>
-              <div class="step skip-bg" title="stepDefinitions.BookingSteps.iVerifyStatusCodeIs(int)">
+              <div class="step pass-bg" title="stepDefinitions.BookingSteps.iVerifyStatusCodeIs(int)">
                 <span>And : I verify that the status code is 200</span>
-      <div>Step skipped
+      <div>
       </div>
               </div>
           </div>
@@ -209,7 +173,7 @@
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="11"><span class="badge log pass-bg mr-2">Pass</span>checking if the get booking by id send a not found code if the id doesn't exist</div>
+        <div class="node" id="10"><span class="badge log pass-bg mr-2">Pass</span>checking if the get booking by id send a not found code if the id doesn't exist</div>
       </div>
     </div>
         <div class="collapse">
@@ -230,14 +194,14 @@
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="14"><span class="badge log pass-bg mr-2">Pass</span>checking if the post booking is working properly when i send the expected data</div>
+        <div class="node" id="13"><span class="badge log pass-bg mr-2">Pass</span>checking if the post booking is working properly when i send the expected data</div>
       </div>
     </div>
         <div class="scenario_outline collapse">
             <div class="card-body l1">
               <div class="card-header">
                 <div class="card-title outline-child">
-                  <div class="node" id="15"><span class="badge log pass-bg mr-2">Pass</span>checking if the post booking is working properly when i send the expected data</div>
+                  <div class="node" id="14"><span class="badge log pass-bg mr-2">Pass</span>checking if the post booking is working properly when i send the expected data</div>
                 </div>
               </div>
               <div class="card-body mt-3 collapse">
@@ -265,14 +229,14 @@
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="19"><span class="badge log fail-bg mr-2">Fail</span>checking if the post booking sends code 400 of bad request when I don't send a firstname</div>
+        <div class="node" id="18"><span class="badge log fail-bg mr-2">Fail</span>checking if the post booking sends code 400 of bad request when I don't send a firstname</div>
       </div>
     </div>
         <div class="scenario_outline ">
             <div class="card-body l1">
               <div class="card-header">
                 <div class="card-title outline-child">
-                  <div class="node" id="20"><span class="badge log fail-bg mr-2">Fail</span>checking if the post booking sends code 400 of bad request when I don't send a firstname</div>
+                  <div class="node" id="19"><span class="badge log fail-bg mr-2">Fail</span>checking if the post booking sends code 400 of bad request when I don't send a firstname</div>
                 </div>
               </div>
               <div class="card-body mt-3 ">
@@ -328,7 +292,7 @@ Expected status code <400> but was <500>.
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="23"><span class="badge log fail-bg mr-2">Fail</span>checking if the put booking sends code 200 of ok when i update with the correct data</div>
+        <div class="node" id="22"><span class="badge log fail-bg mr-2">Fail</span>checking if the put booking sends code 200 of ok when i update with the correct data</div>
       </div>
     </div>
         <div class="">
@@ -395,46 +359,10 @@ Expected status code <200> but was <403>.
 <div class="test-list">
 <div class="test-list-tools">
 <ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
 </div>
 <div class="test-list-wrapper scrollable">
 <ul class="test-list-item">
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log badge-danger'>1</span>
-</span>
-<p class="name">groovy.json.JsonException</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>groovy.json.JsonException</h4>
-<span status="fail" class='badge log badge-danger'>1 failed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>09:12:27 AM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='9'>And : I verify that the body does not have size 0</a>
-<div class="">
-<span class="badge badge-default">Tests of the whole RestfulBooker database.checking if the get booking by id gets me the booking i'm looking for if the id exists.And : I verify that the body does not have size 0</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
@@ -459,9 +387,9 @@ Expected status code <200> but was <403>.
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>09:12:29 AM</td>
+<td>11:02:00 AM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='22'>And : I verify that the status code is 400</a>
+<a href="#" class="linked" test-id='1' id='21'>And : I verify that the status code is 400</a>
 <div class="">
 <span class="badge badge-default">Tests of the whole RestfulBooker database.checking if the post booking sends code 400 of bad request when I don't send a firstname.And : I verify that the status code is 400</span>
 </div>
@@ -469,9 +397,9 @@ Expected status code <200> but was <403>.
 </tr>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>09:12:30 AM</td>
+<td>11:02:03 AM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='25'>And : I verify that the status code is 200</a>
+<a href="#" class="linked" test-id='1' id='24'>And : I verify that the status code is 200</a>
 <div class="">
 <span class="badge badge-default">Tests of the whole RestfulBooker database.checking if the put booking sends code 200 of ok when i update with the correct data.And : I verify that the status code is 200</span>
 </div>
@@ -500,8 +428,8 @@ Expected status code <200> but was <403>.
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>3</span>
-<span class='badge log badge-danger'>3</span>
+<span class='badge log pass-bg'>4</span>
+<span class='badge log badge-danger'>2</span>
 </span>
 <p class="name">@run</p>
 <p class="duration text-sm">6 tests</p>
@@ -509,8 +437,8 @@ Expected status code <200> but was <403>.
 <div class="test-contents d-none">
 <div class="info">
 <h4>@run</h4>
-<span status="pass" class='badge log pass-bg'>3 passed</span>
-<span status="fail" class='badge log badge-danger'>3 failed</span>
+<span status="pass" class='badge log pass-bg'>4 passed</span>
+<span status="fail" class='badge log badge-danger'>2 failed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -523,19 +451,19 @@ Expected status code <200> but was <403>.
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>09:12:24 AM</td>
+<td>11:01:42 AM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='3'>checking if the get booking gets me all the list of bookings</a>
+<a href="#" class="linked" test-id='1' id='2'>checking if the get booking gets me all the list of bookings</a>
 <div class="">
 <span class="badge badge-default">Tests of the whole RestfulBooker database.checking if the get booking gets me all the list of bookings</span>
 </div>
 </td>
 </tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>09:12:26 AM</td>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:01:48 AM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='7'>checking if the get booking by id gets me the booking i'm looking for if the id exists</a>
+<a href="#" class="linked" test-id='1' id='6'>checking if the get booking by id gets me the booking i'm looking for if the id exists</a>
 <div class="">
 <span class="badge badge-default">Tests of the whole RestfulBooker database.checking if the get booking by id gets me the booking i'm looking for if the id exists</span>
 </div>
@@ -543,9 +471,9 @@ Expected status code <200> but was <403>.
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>09:12:27 AM</td>
+<td>11:01:49 AM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='11'>checking if the get booking by id send a not found code if the id doesn't exist</a>
+<a href="#" class="linked" test-id='1' id='10'>checking if the get booking by id send a not found code if the id doesn't exist</a>
 <div class="">
 <span class="badge badge-default">Tests of the whole RestfulBooker database.checking if the get booking by id send a not found code if the id doesn't exist</span>
 </div>
@@ -553,9 +481,9 @@ Expected status code <200> but was <403>.
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>09:12:28 AM</td>
+<td>11:01:57 AM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='15'>checking if the post booking is working properly when i send the expected data</a>
+<a href="#" class="linked" test-id='1' id='14'>checking if the post booking is working properly when i send the expected data</a>
 <div class="">
 <span class="badge badge-default">Tests of the whole RestfulBooker database.checking if the post booking is working properly when i send the expected data</span>
 </div>
@@ -563,9 +491,9 @@ Expected status code <200> but was <403>.
 </tr>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>09:12:29 AM</td>
+<td>11:01:59 AM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='20'>checking if the post booking sends code 400 of bad request when I don't send a firstname</a>
+<a href="#" class="linked" test-id='1' id='19'>checking if the post booking sends code 400 of bad request when I don't send a firstname</a>
 <div class="">
 <span class="badge badge-default">Tests of the whole RestfulBooker database.checking if the post booking sends code 400 of bad request when I don't send a firstname</span>
 </div>
@@ -573,9 +501,9 @@ Expected status code <200> but was <403>.
 </tr>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>09:12:29 AM</td>
+<td>11:02:00 AM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='23'>checking if the put booking sends code 200 of ok when i update with the correct data</a>
+<a href="#" class="linked" test-id='1' id='22'>checking if the put booking sends code 200 of ok when i update with the correct data</a>
 <div class="">
 <span class="badge badge-default">Tests of the whole RestfulBooker database.checking if the put booking sends code 200 of ok when i update with the correct data</span>
 </div>
@@ -598,13 +526,13 @@ Expected status code <200> but was <403>.
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Sep 16, 2024 09:12:23 AM</h3>
+<h3>Sep 16, 2024 11:01:42 AM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Sep 16, 2024 09:12:30 AM</h3>
+<h3>Sep 16, 2024 11:02:03 AM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -655,9 +583,9 @@ Expected status code <200> but was <403>.
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='57%'><b>4</b> scenarios passed</small></div>
+<div><small data-tooltip='66%'><b>4</b> scenarios passed</small></div>
 <div>
-<small data-tooltip='42%'><b>3</b> scenarios failed,
+<small data-tooltip='33%'><b>2</b> scenarios failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -675,10 +603,10 @@ Expected status code <200> but was <403>.
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='73%'><b>11</b> steps passed</small></div>
+<div><small data-tooltip='86%'><b>13</b> steps passed</small></div>
 <div>
-<small data-tooltip='20%'><b>3</b> steps failed,
-<b>1</b> skipped, <b data-tooltip='%'>0</b> others
+<small data-tooltip='13%'><b>2</b> steps failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
 </div>
@@ -694,7 +622,7 @@ Expected status code <200> but was <403>.
 </div></div>
 <script>
 var timeline = {
-"Tests of the whole RestfulBooker database":6.036
+"Tests of the whole RestfulBooker database":20.81
 };
 </script>
 <div class="row">
@@ -705,11 +633,11 @@ var timeline = {
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
 <td>@run</td>
-<td>3</td>
-<td>3</td>
+<td>4</td>
+<td>2</td>
 <td>0</td>
 <td>0</td>
-<td>50%</td>
+<td>66.667%</td>
 </tr>
 </tbody>
 </table></div>
@@ -726,15 +654,15 @@ warningParent: 0,
 skipParent: 0,
 childCount: 5,
 passChild: 4,
-failChild: 3,
+failChild: 2,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 11,
-failGrandChild: 3,
+passGrandChild: 13,
+failGrandChild: 2,
 warningGrandChild: 0,
-skipGrandChild: 1,
+skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
 };

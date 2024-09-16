@@ -1,5 +1,5 @@
 Feature: Tests of the whole RestfulBooker database
-  Scenario: Checking that the endpoints do their job
+  Background: Checking that the endpoints do their job
     @run
     Scenario: checking if the get booking gets me all the list of bookings
       Given : I perform a GET call to the booking endpoint
